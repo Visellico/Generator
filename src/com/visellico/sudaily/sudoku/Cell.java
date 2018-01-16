@@ -1,33 +1,23 @@
 package com.visellico.sudaily.sudoku;
 
+import com.visellico.sudaily.MathUtil;
+
 /**
  * Created by Henry on 1/15/2018.
  */
 public class Cell {
 
-    protected final int EMPTY_CELL_VAL = 0;
-
-    public final int ROW;
-    public final int COL;
-    public final int GRID;
-
-    public final int SPOT_IN_ROW;
-    public final int SPOT_IN_COL;
-    public final int SPOT_IN_GRID;
-
     protected int val;
 
-    public Cell(int row, int col, int val) {
+    protected Cell() {}
 
-        this.ROW = row;
-        this.COL = col;
-        this.GRID = (col / 3) + (row / 3) * 3;
+    public Cell(int val) {
 
-        this.SPOT_IN_ROW = COL;
-        this.SPOT_IN_COL = ROW;
-        this.SPOT_IN_GRID = (COL % 3) + (ROW % 3) * 3;
+        this.val = MathUtil.clamp(val, 1, 9);
+    }
 
-        this.val = val;
+    public int getVal() {
+        return val;
     }
 
     public String toString() {
@@ -41,6 +31,14 @@ public class Cell {
             result = val == ((Cell) o).val;
 
         return result;
+    }
+
+    public int hashCode() {
+        return val;
+    }
+
+    public boolean isEmpty() {
+        return false;
     }
 
 }

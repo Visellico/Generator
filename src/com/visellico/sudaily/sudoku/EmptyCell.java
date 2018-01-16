@@ -5,15 +5,16 @@ package com.visellico.sudaily.sudoku;
  */
 public class EmptyCell extends Cell {
 
-    public EmptyCell(int row, int col) {
-        super(row, col,0);
+    public EmptyCell() {
+        val = 0;
     }
 
     public String toString() {
-        return " ";
+        return "X";
     }
 
-//    public boolean equals(Object o) {
-//        return (o instanceof EmptyCell);
-//    }
+    public boolean isEmpty() {
+        return true;
+    }
+
 }
