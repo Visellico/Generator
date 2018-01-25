@@ -1,6 +1,6 @@
 package com.visellico.backtracking;
 
-import com.visellico.viewer.Observable;
+import java.util.Observable;
 
 /**
  * Created by Henry on 1/15/2018.

@@ -19,7 +19,7 @@ public class Column extends Group {
 //        StringBuilder sb = new StringBuilder("COL: ");
 //
 //        for (int i = 0; i < 9; i++) {
-//            sb.append(cells.get(i).toString());
+//            sb.append(pane.get(i).toString());
 //            int next = i + 1;
 //            if (next % 3 == 0 && next < 9)
 //                sb.append("|");

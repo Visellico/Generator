@@ -4,6 +4,7 @@ import com.visellico.backtracking.Config;
 import com.visellico.sudoku.Board;
 import com.visellico.sudoku.Cell;
 import com.visellico.sudoku.CellCoord;
+import com.visellico.viewer.View;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,14 +17,18 @@ public class BoardConfig extends Config {
     public Board board;
     private int pointer = 0;
 
+    public static View view;
+
     public BoardConfig(Board board) {
 
         this.board = board;
+        addObserver(view);
 
     }
 
     public BoardConfig(BoardConfig boardConfig) {
         board = new Board(boardConfig.board);
+        addObserver(view);
     }
 
     public boolean isGoal() {
@@ -69,7 +74,6 @@ public class BoardConfig extends Config {
         List<Config> children = new ArrayList<>();
         for (int i = 1; i <= 9; i++) {
             BoardConfig temp = new BoardConfig(this);
-            temp.setObserver(observer);
             temp.board.setCell(new CellCoord(pointerRow(), pointerCol(), new Cell(i)));
             children.add(temp);
 
@@ -79,6 +83,9 @@ public class BoardConfig extends Config {
 
     public void display() {
 
-        notifyObserver(board);
+        view.showBoard(board);
+//        setChanged();
+//        notifyObservers(board);
+
     }
 }
