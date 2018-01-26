@@ -1,4 +1,4 @@
-package com.visellico.sudaily;
+package com.visellico;
 
 /**
  * Created by Henry on 1/15/2018.

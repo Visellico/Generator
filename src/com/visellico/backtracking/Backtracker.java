@@ -1,4 +1,4 @@
-package com.visellico.sudaily.backtracking;
+package com.visellico.backtracking;
 
 /**
  * Created by Henry on 1/15/2018.
@@ -13,6 +13,7 @@ public class Backtracker {
         else {
             for (Config sub : config.getSuccessors()) {
                 if (sub.isValid()) {
+                    sub.display();
                     Config solution = solve(sub);
                     if (solution != null)
                         return solution;

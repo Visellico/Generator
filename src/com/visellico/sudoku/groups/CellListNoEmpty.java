@@ -1,6 +1,6 @@
-package com.visellico.sudaily.sudoku.groups;
+package com.visellico.sudoku.groups;
 
-import com.visellico.sudaily.sudoku.Cell;
+import com.visellico.sudoku.Cell;
 
 import java.util.ArrayList;
 import java.util.Collection;

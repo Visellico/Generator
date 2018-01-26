@@ -1,11 +1,11 @@
-package com.visellico.sudaily.backtracking;
+package com.visellico.backtracking;
 
-import java.util.Iterator;
+import java.util.Observable;
 
 /**
  * Created by Henry on 1/15/2018.
  */
-public abstract class Config {
+public abstract class Config extends Observable {
 
     public abstract boolean isGoal();
 

@@ -1,6 +1,6 @@
-package com.visellico.sudaily.sudoku;
+package com.visellico.sudoku;
 
-import com.visellico.sudaily.MathUtil;
+import com.visellico.MathUtil;
 
 /**
  * Created by Henry on 1/15/2018.

@@ -1,7 +1,7 @@
-package com.visellico.sudaily.sudoku.groups;
+package com.visellico.sudoku.groups;
 
-import com.visellico.sudaily.sudoku.Cell;
-import com.visellico.sudaily.sudoku.EmptyCell;
+import com.visellico.sudoku.Cell;
+import com.visellico.sudoku.EmptyCell;
 
 import java.util.ArrayList;
 import java.util.HashSet;

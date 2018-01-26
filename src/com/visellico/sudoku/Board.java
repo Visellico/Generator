@@ -1,12 +1,13 @@
-package com.visellico.sudaily.sudoku;
+package com.visellico.sudoku;
 
-import com.visellico.sudaily.sudoku.groups.Column;
-import com.visellico.sudaily.sudoku.groups.Grid;
-import com.visellico.sudaily.sudoku.groups.Group;
-import com.visellico.sudaily.sudoku.groups.Row;
+import com.visellico.sudoku.groups.Column;
+import com.visellico.sudoku.groups.Grid;
+import com.visellico.sudoku.groups.Group;
+import com.visellico.sudoku.groups.Row;
+import javafx.beans.InvalidationListener;
+import javafx.beans.Observable;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**

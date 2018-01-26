@@ -1,4 +1,4 @@
-package com.visellico.sudaily.sudoku.groups;
+package com.visellico.sudoku.groups;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.visellico.sudaily.sudoku;
+package com.visellico.sudoku;
 
 /**
  * Created by Henry on 1/15/2018.
